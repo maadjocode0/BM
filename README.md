@@ -17,11 +17,28 @@ a hand-coded dot-globe canvas, smooth scrolling and scroll-driven storytelling.
 ## Structure
 
 ```
-index.html          single page — all sections
-css/styles.css      design system + responsive + reduced-motion fallbacks
-js/main.js          preloader, hero intro, reveals, pin, globe, cursor, menu
-assets/             favicon.svg, og.png
+index.html                  home — all sections
+global-volunteer.html       Global Volunteer landing (internal, not a redirect)
+css/styles.css              shared design system + responsive + reduced-motion fallbacks
+css/global-volunteer.css    page-specific components (projects, timeline, FAQ, SDG, gallery)
+js/main.js                  home: preloader, hero intro, reveals, pin, globe, cursor, menu
+js/gv.js                    GV page: reveals, counters, floating shapes, timeline, FAQ, lightbox
+assets/                     favicon.svg, og.png
 ```
+
+## Global Volunteer page
+
+Clicking **Global Volunteer** on the home page no longer jumps straight to aiesec.org — it opens
+[`global-volunteer.html`](global-volunteer.html), a full internal landing page in the same design
+language. Only the final **"Apply on the Official AIESEC Platform"** button (and each project's
+*View opportunity* link) leaves for aiesec.org.
+
+Content is **real**, pulled from the LC's public opportunities sheet: AIESEC in Zagazig is the
+**#1 LC in Egypt for incoming Global Volunteer (term 25.26)** and hosts seven themed projects —
+Global Classroom, Heartbeat, Scale Up!, Skill Up!, On The Map, Fingerprint, Aquatica — each with
+its real requirements, fee (TN $75–90), benefits and live `aiesec.org/opportunity/...` link.
+Sections: hero → stat strip → what is GV → why Zagazig → 7 projects → how-it-works timeline →
+benefits → eligibility → 5 SDGs → gallery (+lightbox) → FAQ (accordion) → testimonials → final CTA.
 
 ## Run locally
 
@@ -48,11 +65,14 @@ Hero (dot-globe) → marquee → About (word-by-word manifesto) → Values (colo
 
 | Item | Where | Status |
 |---|---|---|
-| Impact numbers (200+ exchanges, 500+ members, 30+ countries, 8 cities) | `#impact` | **Placeholders** — replace with the LC's real figures |
-| Testimonials (Nour / Omar / Salma / Youssef) | `#stories` | **Sample copy** — replace with real member quotes |
-| Social links (Facebook `/AIESECZ`, Instagram `/aiesec_zagazig`, X `/AIESECZagazig`, YouTube) | footer + menu | Taken from the LC's old official site — confirm they're still active |
-| Application CTA (`aiesec.org`) | `#join`, CTA | Point to the LC's current recruitment form when one exists |
-| Program URLs (`aiesec.org/global-volunteer` etc.) | program cards | Official global pages — verify they still resolve |
+| Home impact numbers (200+ exchanges, 500+ members, 30+ countries, 8 cities) | `index.html#impact` | **Placeholders** — replace with the LC's real figures |
+| Home testimonials (Nour / Omar / Salma / Youssef) | `index.html#stories` | **Sample copy** — replace with real member quotes |
+| GV testimonials (labelled *illustrative*, with country flags) | `global-volunteer.html#testimonials` | **Sample copy** — swap for real EP feedback (a Feedback Form exists in the LC sheet) |
+| GV gallery tiles | `global-volunteer.html#gallery` | Styled placeholders — drop in real project photos when available |
+| Instagram now `/icxzagazig` | footer + menu (both pages) | From the LC (incoming-exchange handle) — confirm it's the primary account |
+| Other socials (Facebook `/AIESECZ`, X `/AIESECZagazig`, YouTube) | footer + menu | From the LC's old official site — confirm still active |
+| GV project data (names, fees, requirements, opportunity links) | `global-volunteer.html#projects` | **Real, from the LC sheet** — links are live but expire; refresh when a term closes |
+| Final apply CTA (`aiesec.org/global-volunteer`) | `global-volunteer.html#apply` | Official GV landing — verify it still resolves |
 
 Official AIESEC brand assets (logo, fonts): [brand.aiesec.org](https://brand.aiesec.org) —
 the site currently uses an original orbit mark + text wordmark instead of the trademarked logo.
