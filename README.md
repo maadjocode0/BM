@@ -31,7 +31,7 @@ js/gv.js                       GV page interactions
 js/site-core.js                shared chrome for the module (Lenis, nav, menu, cursor, reveals…)
 js/opportunities.js            listing: filtering (SDG / country / duration / name)
 js/opportunity-detail.js       detail: progress bar, timeline, FAQ, lightbox, sticky apply
-assets/                        favicon.svg, og.png
+assets/                        official AIESEC logo, symbol/favicon, wordmark, og.png
 ```
 
 ## Global Volunteer page
@@ -105,5 +105,21 @@ Hero (dot-globe) → marquee → About (word-by-word manifesto) → Values (colo
 | `BASE_URL` for canonical / OG / JSON-LD | `tools/build-opportunities.mjs` | Set to `aiesec-zagazig.vercel.app` — **update to the real domain** then re-run the generator |
 | Opportunity gallery tiles | `opportunities/*.html#gallery` | Styled placeholders — drop in real photos when available |
 
-Official AIESEC brand assets (logo, fonts): [brand.aiesec.org](https://brand.aiesec.org) —
-the site currently uses an original orbit mark + text wordmark instead of the trademarked logo.
+## Branding
+
+The site uses the **official AIESEC brand assets**, downloaded from AIESEC's official logo library
+([logos.aiesec.org](https://www.logos.aiesec.org)) and CDN:
+
+- `assets/aiesec-logo.png` — official AIESEC logo lockup (wordmark + the "AIESEC people", white on
+  the AIESEC-blue box). Used in the navbar, footer and loading screen. Shown at a fixed height with
+  `width:auto` so the aspect ratio is never distorted; never recoloured, stretched or rotated.
+- `assets/favicon.svg` / `assets/aiesec-symbol.svg` — the official AIESEC symbol SVG (blue `#037EF3`
+  square + white AIESEC human), the same icon `aiesec.org` uses. Favicon across all pages.
+- `assets/aiesec-wordmark-blue.png` — official blue wordmark (kept for light-background use).
+- `assets/og.png` — regenerated social share card featuring the official logo.
+
+On the dark UI the blue-box lockup is the brand-correct choice (AIESEC provides the logo either in
+its blue container or in white; there is no white-on-transparent full lockup in the public library).
+To swap in a different official variant later, drop the file into `assets/` and, for the generated
+opportunity pages, re-run `node tools/build-opportunities.mjs`. The decorative hero globe is a generic
+visualization, not a logo. There are no login/register pages. Full guidelines: the AIESEC Blue Book.

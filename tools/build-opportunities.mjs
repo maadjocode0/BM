@@ -21,15 +21,13 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
 const attr = s => esc(s).replace(/'/g, '&#39;');
 
 /* ── Shared partials ───────────────────────────────────────── */
-const MARK = `<svg class="nav__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <defs><linearGradient id="markGrad" x1="6" y1="6" x2="34" y2="34"><stop offset="0" stop-color="#037EF3"/><stop offset="1" stop-color="#0CB9C1"/></linearGradient></defs>
-      <circle cx="20" cy="20" r="14.5" fill="url(#markGrad)"/>
-      <ellipse cx="20" cy="20" rx="19" ry="7.2" stroke="#F2F6FC" stroke-width="1.6" transform="rotate(-24 20 20)"/>
-      <circle cx="33.5" cy="12.5" r="2.6" fill="#FFC845"/></svg>`;
+/* Official AIESEC logo lockup (assets/aiesec-logo.png) */
+const logo = (prefix) => `<img class="nav__logo-img" src="${prefix}assets/aiesec-logo.png" alt="AIESEC" width="1265" height="259" decoding="async">`;
 
-const preloader = tag => `<div id="preloader" aria-hidden="true">
+const preloader = (tag, prefix) => `<div id="preloader" aria-hidden="true">
     <div class="preloader__inner">
-      <p class="preloader__brand">AIESEC <span>in Zagazig</span></p>
+      <img class="preloader__logo" src="${prefix}assets/aiesec-logo.png" alt="AIESEC" width="1265" height="259">
+      <p class="preloader__brand">in <span>Zagazig</span></p>
       <p class="preloader__num">0</p>
       <p class="preloader__tag">${tag}</p>
     </div>
@@ -41,8 +39,7 @@ const chrome = `<div class="grain" aria-hidden="true"></div>
 
 const nav = (prefix) => `<header class="nav">
     <div class="nav__inner container">
-      <a href="${prefix}index.html" class="nav__logo" aria-label="AIESEC in Zagazig — home">${MARK}
-        <span class="nav__wordmark">AIESEC<em>in Zagazig</em></span></a>
+      <a href="${prefix}index.html" class="nav__logo" aria-label="AIESEC in Zagazig — home">${logo(prefix)}<span class="nav__entity">in Zagazig</span></a>
       <nav class="nav__links" aria-label="Primary">
         <a href="${prefix}index.html#about">About</a>
         <a href="${prefix}index.html#values">Values</a>
@@ -80,8 +77,7 @@ const footer = (prefix) => `<footer class="footer">
     <p class="footer__watermark" aria-hidden="true">OPPORTUNITIES</p>
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a href="${prefix}index.html" class="nav__logo" aria-label="Back to home">${MARK}
-          <span class="nav__wordmark">AIESEC<em>in Zagazig</em></span></a>
+        <a href="${prefix}index.html" class="nav__logo" aria-label="Back to home">${logo(prefix)}<span class="nav__entity">in Zagazig</span></a>
         <p class="footer__blurb">The Zagazig University chapter of the world's largest youth-led organization — and Egypt's #1 local committee for incoming Global Volunteer. Come make an impact where you're treated like family.</p>
         <div class="footer__socials">
           <a href="https://www.facebook.com/AIESECZ" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.2 0-1-.1-1.9-.1-1.9 0-3.3 1.2-3.3 3.4V11H8.8v3h2.4v7h2.3z"/></svg></a>
@@ -259,7 +255,7 @@ ${head({
   })}
 <body>
   <a class="skip-link" href="#opportunities">Skip to content</a>
-  ${preloader('Live Global Volunteer opportunities')}
+  ${preloader('Live Global Volunteer opportunities', '')}
   ${chrome}
   ${nav('')}
   ${menu('')}
@@ -466,7 +462,7 @@ ${head({
   })}
 <body>
   <a class="skip-link" href="#overview">Skip to content</a>
-  ${preloader(esc(o.title) + ' · Global Volunteer')}
+  ${preloader(esc(o.title) + ' · Global Volunteer', '../')}
   ${chrome}
   ${nav('../')}
   ${menu('../')}
