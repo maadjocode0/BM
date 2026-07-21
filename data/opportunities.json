@@ -1,0 +1,314 @@
+{
+  "shared": {
+    "org": "AIESEC in Zagazig — the #1 local committee in Egypt for incoming Global Volunteer (term 25.26). Our Customer Experience team holds the country's highest approved-to-completed conversion rate, so you're supported from the first message to the airport goodbye.",
+    "campuses": ["Zagazig", "Obour", "Benha", "10th of Ramadan"],
+    "locationNote": "Zagazig is centrally located in Egypt — under an hour from many cities and close to both the Red and Mediterranean seas. It's a safe city where every key area is about ten minutes away.",
+    "climate": "Moderate climate — around 35°C in summer and 15°C in winter.",
+    "applicationProcess": [
+      { "n": 1, "title": "Apply", "text": "Pick this opportunity and apply on the official AIESEC platform. Five minutes, no perfect CV required." },
+      { "n": 2, "title": "Interview", "text": "A short conversation with our team to get to know you and confirm the fit." },
+      { "n": 3, "title": "Get matched", "text": "You're accepted and matched to the project and start dates that work for you." },
+      { "n": 4, "title": "Prepare", "text": "Visa support, accommodation and logistics — sorted together with your EP buddy." },
+      { "n": 5, "title": "Volunteer", "text": "Arrive to an airport pickup and make real impact, with trips and a Global Village along the way." },
+      { "n": 6, "title": "Return", "text": "Head home with a global certificate, a second family and a story that travels." }
+    ],
+    "faqs": [
+      { "q": "Who can apply?", "a": "Young people roughly 18–30 from anywhere in the world. Most roles need no prior experience; some ask for a specific background, noted under Requirements." },
+      { "q": "Do I need to speak Arabic?", "a": "No. Projects run in English (B1 and up). Your team speaks English throughout and a few roles also welcome German or French speakers." },
+      { "q": "What's included in the fee?", "a": "A small hosting (TN) fee covers your support, accommodation arrangement and experience. Your travel is separate; living costs in Zagazig are among the lowest in Egypt." },
+      { "q": "Is Zagazig safe?", "a": "Yes — a safe, welcoming city where every key area is about ten minutes away, centrally located and close to the Red and Mediterranean seas." },
+      { "q": "Do you help with the visa?", "a": "Yes. Our experience team, ranked #1 in Egypt for incoming exchange, supports you through the visa process and every logistic." },
+      { "q": "Will I get a certificate?", "a": "Yes — a recognised global certificate on completion, plus outings and a Global Village celebration along the way." }
+    ]
+  },
+  "opportunities": [
+    {
+      "slug": "fbi",
+      "title": "FBI",
+      "displayTitle": "FBI — Fingerprint",
+      "category": "Music & Art",
+      "sdg": { "n": 4, "label": "Quality Education", "color": "#C5192D" },
+      "accent": "#D6409F",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "city": "Zagazig",
+      "location": "Zagazig, Sharqia — Egypt",
+      "duration": "6 weeks",
+      "hours": "≈30 hrs / week · weekends free",
+      "fee": "$90",
+      "iconSvg": "<path d=\"M9 18V5l10-2v13\"/><circle cx=\"6\" cy=\"18\" r=\"3\"/><circle cx=\"16\" cy=\"16\" r=\"3\"/>",
+      "applyUrl": "https://aiesec.org/opportunity/global-volunteer/1333598",
+      "jdUrl": "https://drive.google.com/file/d/1rGxumeAEljpmAHuNgPqLTKZRwVazZayW/view",
+      "jdType": "Google Drive",
+      "short": "Bring music and art to children at a local academy — and leave your fingerprint on a young generation.",
+      "overview": "FBI is part of AIESEC in Zagazig's Fingerprint project. You'll run creative music and art sessions for children, using the universal language of art to build their confidence, imagination and joy across six unforgettable weeks.",
+      "orgAbout": "You'll work with a children's learning academy in Zagazig, hosted and supported end-to-end by AIESEC in Zagazig's award-winning experience team.",
+      "responsibilities": [
+        "Plan and deliver music and art activities for children",
+        "Create a fun, safe and inclusive classroom",
+        "Encourage creativity, teamwork and self-expression",
+        "Prepare simple materials and small performances",
+        "Share your own culture through art"
+      ],
+      "requirements": [
+        "A background or genuine passion in music or art",
+        "Conversational English (B1 or above)",
+        "Comfortable working with children",
+        "Female applicants preferred for this project",
+        "Open-minded, patient and reliable"
+      ],
+      "benefits": [
+        "Covered accommodation for the whole stay",
+        "Airport pickup on arrival",
+        "A dedicated EP buddy",
+        "Global certificate on completion",
+        "Outings and a Global Village celebration"
+      ],
+      "accommodation": "Comfortable accommodation is arranged and covered by the hosting team for the full duration of the project.",
+      "food": "Some meals are provided; food in Zagazig is affordable and delicious, with vegetarian options widely available.",
+      "transportation": "Airport pickup on arrival, plus support getting around the city and to the project each day.",
+      "outcomes": [
+        "Cross-cultural communication",
+        "Leadership and initiative",
+        "Facilitation and classroom skills",
+        "Adaptability and resilience"
+      ],
+      "gallery": [
+        { "k": "In the studio", "t": "Creative sessions" },
+        { "k": "The kids", "t": "Young artists" },
+        { "k": "Culture", "t": "Global Village" },
+        { "k": "The city", "t": "Life in Zagazig" }
+      ]
+    },
+    {
+      "slug": "hefnawy",
+      "title": "HFNEWI",
+      "displayTitle": "HFNEWI — Global Classroom",
+      "category": "Teaching & Languages",
+      "sdg": { "n": 4, "label": "Quality Education", "color": "#C5192D" },
+      "accent": "#037EF3",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "city": "Zagazig",
+      "location": "Zagazig, Sharqia — Egypt",
+      "duration": "6 weeks",
+      "hours": "≈30 hrs / week · weekends free",
+      "fee": "$90",
+      "iconSvg": "<path d=\"M22 10 12 5 2 10l10 5 10-5z\"/><path d=\"M6 12v5c0 1 2.7 2.5 6 2.5s6-1.5 6-2.5v-5\"/>",
+      "applyUrl": "https://aiesec.org/opportunity/global-volunteer/1335468",
+      "jdUrl": "https://drive.google.com/file/d/1-dqb9RRhQHVY7IjWui7rLjNIRhO1zr6I/view",
+      "jdType": "Google Drive",
+      "short": "Teach English and life skills to children at the Hefnawy academy, and become a role model that sticks.",
+      "overview": "Part of the Global Classroom project, HFNEWI places you inside a local academy where you'll help children learn English and grow in confidence through interactive, high-energy lessons.",
+      "orgAbout": "Hosted at the Hefnawy learning academy in Zagazig, with full support from AIESEC in Zagazig's experience team — ranked first in Egypt for incoming exchange.",
+      "responsibilities": [
+        "Lead interactive English lessons for children",
+        "Design engaging activities, songs and games",
+        "Build kids' confidence and speaking skills",
+        "Bring your own culture into the classroom",
+        "Collaborate with the local teachers"
+      ],
+      "requirements": [
+        "Good conversational English (B1 or above)",
+        "Female applicants preferred for this project",
+        "Enjoy working with children",
+        "Creative, energetic and dependable"
+      ],
+      "benefits": [
+        "Covered accommodation",
+        "Airport pickup on arrival",
+        "Two meals a day included",
+        "EP buddy and global certificate",
+        "Outings and Global Village"
+      ],
+      "accommodation": "Covered accommodation is arranged for your entire stay, close to the project and the city centre.",
+      "food": "Two meals a day are included, and food in Zagazig is cheap and delicious with vegetarian options available.",
+      "transportation": "Airport pickup on arrival, with daily support getting to and from the academy.",
+      "outcomes": [
+        "Teaching and public-speaking skills",
+        "Cross-cultural communication",
+        "Leadership and patience",
+        "Adaptability and resilience"
+      ],
+      "gallery": [
+        { "k": "The classroom", "t": "Teaching that sticks" },
+        { "k": "The kids", "t": "Confidence grows" },
+        { "k": "Culture", "t": "Global Village" },
+        { "k": "The city", "t": "Life in Zagazig" }
+      ]
+    },
+    {
+      "slug": "biotech-amen-lab",
+      "title": "Biotechnologie (Amen LAB)",
+      "displayTitle": "Biotechnologie — Amen LAB",
+      "category": "Medical & Science",
+      "sdg": { "n": 3, "label": "Good Health & Well-being", "color": "#4C9F38" },
+      "accent": "#F85A40",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "city": "Zagazig",
+      "location": "Zagazig, Sharqia — Egypt",
+      "duration": "6 weeks",
+      "hours": "≈30 hrs / week · weekends free",
+      "fee": "$90",
+      "iconSvg": "<path d=\"M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3\"/><path d=\"M7.5 15h9\"/>",
+      "applyUrl": "https://aiesec.org/opportunity/global-volunteer/1326728",
+      "jdUrl": "https://aiesec.org/opportunity/global-volunteer/1326728",
+      "jdType": "AIESEC",
+      "short": "Assist a working biotech and pharmaceutical lab — hands-on exposure for future scientists and medics.",
+      "overview": "As part of the Heartbeat project, you'll support the team at Amen Lab, assisting with day-to-day laboratory and pharmaceutical work and gaining real exposure to Egypt's health-science field.",
+      "orgAbout": "Amen Lab is a biotechnology and pharmaceutical laboratory in Zagazig, hosting international volunteers through AIESEC in Zagazig.",
+      "responsibilities": [
+        "Assist the lab team with daily tasks",
+        "Support sample preparation and basic procedures",
+        "Observe and learn clinical and lab workflows",
+        "Help maintain a clean, safe lab environment",
+        "Document and share what you learn"
+      ],
+      "requirements": [
+        "Biomedical or science background",
+        "Good conversational English (B1 or above)",
+        "Female applicants preferred for this project",
+        "Detail-oriented and responsible"
+      ],
+      "benefits": [
+        "Covered accommodation",
+        "Airport pickup on arrival",
+        "A dedicated EP buddy",
+        "Global certificate on completion",
+        "Outings and Global Village"
+      ],
+      "accommodation": "Covered accommodation is arranged for the full duration, within easy reach of the lab.",
+      "food": "Food in Zagazig is affordable and delicious, with vegetarian options widely available.",
+      "transportation": "Airport pickup on arrival, plus support getting to the lab and around the city.",
+      "outcomes": [
+        "Laboratory and scientific skills",
+        "Professionalism in a real workplace",
+        "Cross-cultural communication",
+        "Adaptability and resilience"
+      ],
+      "gallery": [
+        { "k": "In the lab", "t": "Hands-on science" },
+        { "k": "The team", "t": "Real workflows" },
+        { "k": "Culture", "t": "Global Village" },
+        { "k": "The city", "t": "Life in Zagazig" }
+      ]
+    },
+    {
+      "slug": "ent",
+      "title": "ENT",
+      "displayTitle": "ENT — Heartbeat",
+      "category": "Medical & Health",
+      "sdg": { "n": 3, "label": "Good Health & Well-being", "color": "#4C9F38" },
+      "accent": "#0CB9C1",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "city": "Zagazig",
+      "location": "Zagazig, Sharqia — Egypt",
+      "duration": "4 weeks",
+      "hours": "≈30 hrs / week · weekends free",
+      "fee": "$75",
+      "iconSvg": "<path d=\"M3.5 12H7l1.5-3 3 6 2-4 1.2 2H20.5\"/><path d=\"M4 12.5c1.3 3 4.4 5.6 8 8 3.6-2.4 6.7-5 8-8\"/>",
+      "applyUrl": "https://aiesec.org/opportunity/global-volunteer/1330311",
+      "jdUrl": "https://www.canva.com/design/DAG-h99QDH0/h9SgEnRcHosQ0bzCwo81QQ/edit",
+      "jdType": "Canva",
+      "short": "Shadow and assist ENT specialists in a real clinical setting — built for medical students.",
+      "overview": "An intensive four-week Heartbeat placement where you support ENT (ear, nose and throat) practitioners — observing consultations and assisting under supervision in a real Egyptian clinic.",
+      "orgAbout": "A medical center in Zagazig specialising in ENT care, hosting volunteers through AIESEC in Zagazig.",
+      "responsibilities": [
+        "Assist ENT doctors during consultations",
+        "Observe examinations and minor procedures",
+        "Help prepare patients and materials",
+        "Support basic clinical tasks under supervision",
+        "Learn medical workflows firsthand"
+      ],
+      "requirements": [
+        "A medical field background",
+        "Female applicants preferred for this project",
+        "Conversational English (B1 or above)",
+        "Professional, discreet and reliable"
+      ],
+      "benefits": [
+        "Covered accommodation",
+        "One meal covered",
+        "Airport pickup on arrival",
+        "EP buddy and global certificate",
+        "Outings and Global Village"
+      ],
+      "accommodation": "Covered accommodation is arranged for your four-week placement, close to the clinic.",
+      "food": "One meal is covered; food in Zagazig is otherwise cheap and delicious with vegetarian options.",
+      "transportation": "Airport pickup on arrival, plus support getting to the clinic each day.",
+      "outcomes": [
+        "Clinical observation skills",
+        "Professionalism in healthcare settings",
+        "Cross-cultural communication",
+        "Adaptability and resilience"
+      ],
+      "gallery": [
+        { "k": "The clinic", "t": "Real medicine" },
+        { "k": "The team", "t": "Learn by doing" },
+        { "k": "Culture", "t": "Global Village" },
+        { "k": "The city", "t": "Life in Zagazig" }
+      ]
+    },
+    {
+      "slug": "on-the-map",
+      "title": "On The Map",
+      "displayTitle": "On The Map",
+      "category": "Media & Travel",
+      "sdg": { "n": 8, "label": "Decent Work & Economic Growth", "color": "#A21942" },
+      "accent": "#F48924",
+      "country": "Egypt",
+      "flag": "🇪🇬",
+      "city": "Zagazig",
+      "location": "Zagazig, Sharqia — Egypt (+ trips across Egypt)",
+      "duration": "4–6 weeks",
+      "hours": "≈30 hrs / week · trips on weekends",
+      "fee": "$75 + package",
+      "packages": "Travel packages from $270 (4 weeks, 2 cities) or $395 (6 weeks, 6 cities).",
+      "iconSvg": "<path d=\"M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z\"/><circle cx=\"12\" cy=\"10\" r=\"2.6\"/>",
+      "applyUrl": "https://aiesec.org/opportunity/global-volunteer/1334462",
+      "jdUrl": "https://www.canva.com/design/DAHBHPwTUNE/sm5aKMuGs9DNmqvmt7l-CQ/edit",
+      "jdType": "Canva",
+      "short": "Tell Egypt's story through marketing and photography — while a travel package takes you across the country.",
+      "overview": "On The Map is AIESEC in Zagazig's flagship experience: create marketing content and photography for local partners while exploring up to six Egyptian cities on an optional travel package. No requirements — just curiosity and a camera.",
+      "orgAbout": "AIESEC in Zagazig hosts On The Map in partnership with local organizations, offering some of the most affordable travel packages in all of Egypt.",
+      "responsibilities": [
+        "Create marketing content and social media",
+        "Shoot photography across projects and trips",
+        "Help tell the story of Zagazig and Egypt",
+        "Collaborate with the local team",
+        "Represent your culture at events"
+      ],
+      "requirements": [
+        "No specific background required",
+        "Basic English is enough",
+        "An eye for content or photography is a plus",
+        "Open to travel and adventure"
+      ],
+      "benefits": [
+        "Covered accommodation, plus hotels during trips",
+        "Food covered during trips",
+        "Transportation covered on trips",
+        "FREE trips across up to six cities",
+        "Visa support, EP buddy & certificate",
+        "Global Village celebration"
+      ],
+      "accommodation": "Accommodation is covered in Zagazig, with hotel stays provided during the trips on your travel package.",
+      "food": "Food is covered during trips; in Zagazig it's cheap and delicious with vegetarian options widely available.",
+      "transportation": "Transportation is covered during all trips, plus airport pickup and full visa support.",
+      "outcomes": [
+        "Content creation and photography",
+        "Storytelling and personal branding",
+        "Cross-cultural communication",
+        "Adaptability and independence"
+      ],
+      "gallery": [
+        { "k": "On the road", "t": "Six cities" },
+        { "k": "Through the lens", "t": "Photography" },
+        { "k": "Culture", "t": "Global Village" },
+        { "k": "The seas", "t": "Red & Mediterranean" }
+      ]
+    }
+  ]
+}

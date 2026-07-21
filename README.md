@@ -17,13 +17,21 @@ a hand-coded dot-globe canvas, smooth scrolling and scroll-driven storytelling.
 ## Structure
 
 ```
-index.html                  home — all sections
-global-volunteer.html       Global Volunteer landing (internal, not a redirect)
-css/styles.css              shared design system + responsive + reduced-motion fallbacks
-css/global-volunteer.css    page-specific components (projects, timeline, FAQ, SDG, gallery)
-js/main.js                  home: preloader, hero intro, reveals, pin, globe, cursor, menu
-js/gv.js                    GV page: reveals, counters, floating shapes, timeline, FAQ, lightbox
-assets/                     favicon.svg, og.png
+index.html                     home — all sections
+global-volunteer.html          Global Volunteer landing (internal, not a redirect)
+opportunities.html             ⚙ generated — Featured Opportunities listing + filters
+opportunities/<slug>.html      ⚙ generated — 5 SEO-complete detail pages
+data/opportunities.json        single source of truth for the module
+tools/build-opportunities.mjs  static generator (run to regenerate the ⚙ files)
+css/styles.css                 shared design system + responsive + reduced-motion fallbacks
+css/global-volunteer.css       GV-page components (projects, timeline, FAQ, SDG, gallery)
+css/opportunities.css          Opportunities module (glass cards, filters, detail, sticky apply)
+js/main.js                     home: preloader, hero intro, reveals, pin, globe, cursor, menu
+js/gv.js                       GV page interactions
+js/site-core.js                shared chrome for the module (Lenis, nav, menu, cursor, reveals…)
+js/opportunities.js            listing: filtering (SDG / country / duration / name)
+js/opportunity-detail.js       detail: progress bar, timeline, FAQ, lightbox, sticky apply
+assets/                        favicon.svg, og.png
 ```
 
 ## Global Volunteer page
@@ -39,6 +47,26 @@ Global Classroom, Heartbeat, Scale Up!, Skill Up!, On The Map, Fingerprint, Aqua
 its real requirements, fee (TN $75–90), benefits and live `aiesec.org/opportunity/...` link.
 Sections: hero → stat strip → what is GV → why Zagazig → 7 projects → how-it-works timeline →
 benefits → eligibility → 5 SDGs → gallery (+lightbox) → FAQ (accordion) → testimonials → final CTA.
+
+## Opportunities module
+
+A "Featured Global Volunteer Opportunities" listing + a dedicated detail page per opportunity,
+generated from one JSON source so nothing is duplicated:
+
+- **Edit content** in [`data/opportunities.json`](data/opportunities.json) (5 real opportunities:
+  FBI, HFNEWI, Biotechnologie/Amen LAB, ENT, On The Map).
+- **Regenerate** the listing + detail pages: `node tools/build-opportunities.mjs`
+- Output is committed static HTML — **no runtime build**, real per-page SEO (title, description,
+  canonical, Open Graph, Twitter card, JSON-LD `JobPosting` + `BreadcrumbList` + `FAQPage`).
+- Listing has live **filtering** by SDG, country, duration and name; cards are glassmorphism with
+  hover; detail pages have a sticky Apply rail (desktop) / sticky bar (mobile), parallax header,
+  scroll progress, animated timeline, FAQ accordion and a gallery lightbox.
+- Built in the site's real stack (vanilla + GSAP/Lenis) to stay consistent — **not** Next.js/React
+  (this repo has never had them). All the requested Framer-Motion-style motions are done with GSAP.
+- `BASE_URL` in the generator (currently `https://aiesec-zagazig.vercel.app`) sets the canonical/OG
+  host — **change it to the real deploy domain** and re-run the generator.
+
+Reached from the Global Volunteer page's "View all opportunities" card. The home nav is untouched.
 
 ## Run locally
 
@@ -73,6 +101,9 @@ Hero (dot-globe) → marquee → About (word-by-word manifesto) → Values (colo
 | Other socials (Facebook `/AIESECZ`, X `/AIESECZagazig`, YouTube) | footer + menu | From the LC's old official site — confirm still active |
 | GV project data (names, fees, requirements, opportunity links) | `global-volunteer.html#projects` | **Real, from the LC sheet** — links are live but expire; refresh when a term closes |
 | Final apply CTA (`aiesec.org/global-volunteer`) | `global-volunteer.html#apply` | Official GV landing — verify it still resolves |
+| Opportunity data (5 opps: apply links, JD links, fees, requirements) | `data/opportunities.json` | **Real, user-provided** — `aiesec.org/opportunity/...` and Drive/Canva JD links expire per term; refresh when they close |
+| `BASE_URL` for canonical / OG / JSON-LD | `tools/build-opportunities.mjs` | Set to `aiesec-zagazig.vercel.app` — **update to the real domain** then re-run the generator |
+| Opportunity gallery tiles | `opportunities/*.html#gallery` | Styled placeholders — drop in real photos when available |
 
 Official AIESEC brand assets (logo, fonts): [brand.aiesec.org](https://brand.aiesec.org) —
 the site currently uses an original orbit mark + text wordmark instead of the trademarked logo.
