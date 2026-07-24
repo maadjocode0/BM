@@ -1,0 +1,4 @@
+{
+  "_readme": "Add AIESEC Zagazig videos here. Each item: { \"src\": \"assets/videos/xxx.mp4\", \"kicker\": \"...\", \"title\": \"...\", \"poster\": \"assets/videos/xxx.jpg\" (optional) }. Leave empty to show styled placeholders.",
+  "videos": []
+}

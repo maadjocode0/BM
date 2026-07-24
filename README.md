@@ -31,8 +31,30 @@ js/gv.js                       GV page interactions
 js/site-core.js                shared chrome for the module (Lenis, nav, menu, cursor, reveals…)
 js/opportunities.js            listing: filtering (SDG / country / duration / name)
 js/opportunity-detail.js       detail: progress bar, timeline, FAQ, lightbox, sticky apply
+about-zagazig.html             About page (hero, mission, vision, values, journey,
+                               video slider, gallery, counters, testimonials, contact, CTA)
+css/about.css                  About-page components
+js/about.js                    About: Swiper video + testimonials sliders, masonry gallery + lightbox
+data/experience.json           video slots for the "Experience AIESEC Zagazig" slider
+data/gallery.json              photo slots for the About gallery
+assets/sdg/                    official UN SDG icons (goals 3, 4, 8, 14, 17)
 assets/                        official AIESEC logo, symbol/favicon, wordmark, og.png
 ```
+
+## About Zagazig page & the SDG / media updates
+
+- **SDGs** (`global-volunteer.html#sdgs`): now the **official UN SDG icons** (from the UN's icon
+  library) for goals **3, 4, 8, 14, 17** in their official colours, inside glass cards with a glowing
+  border + scale on hover. Icons deployed unmodified at correct square aspect.
+- **[/about-zagazig](about-zagazig.html)**: new page in the site's stack — parallax hero, about,
+  mission (word-reveal), vision, six values, journey timeline, **"Experience AIESEC Zagazig"** video
+  slider (Swiper 11 — autoplay, loop, pause-on-hover, arrows, glass pagination, lazy), masonry gallery
+  with lightbox (zoom/keyboard), impact counters, testimonials slider, why-join cards, a Contact card
+  for **Amr Aymen**, and a "Become the next leader" CTA. Reached from every footer (top nav untouched).
+- **Media is data-driven**: drop videos in `data/experience.json` and photos (incl. the pyramids trip)
+  in `assets/gallery/` + `data/gallery.json` — the slider and masonry pick them up automatically;
+  until then they show styled placeholders. Built vanilla + GSAP/Lenis + Swiper (not Next.js — this
+  repo has no React); the "Framer Motion" motions are done with GSAP.
 
 ## Global Volunteer page
 
@@ -97,6 +119,11 @@ Hero (dot-globe) → marquee → About (word-by-word manifesto) → Values (colo
 | Home testimonials (Nour / Omar / Salma / Youssef) | `index.html#stories` | **Sample copy** — replace with real member quotes |
 | GV testimonials (labelled *illustrative*, with country flags) | `global-volunteer.html#testimonials` | **Sample copy** — swap for real EP feedback (a Feedback Form exists in the LC sheet) |
 | GV gallery tiles | `global-volunteer.html#gallery` | Styled placeholders — drop in real project photos when available |
+| About: Experience videos | `data/experience.json` | **Empty** — Drive folder wasn't accessible (connector needs reconnecting). Add MP4s to `assets/videos/` + list them, or grant Drive access |
+| About: gallery photos (incl. pyramids trip) | `data/gallery.json` + `assets/gallery/` | **Empty** — same Drive access issue; add photos and they auto-populate the masonry |
+| About: Amr Aymen contact details | `about-zagazig.html#contact` | **Placeholders** — phone, WhatsApp, email & LinkedIn need real values (Facebook/Instagram are the real LC accounts). Profile photo: add `assets/amr-aymen.jpg` + `data-photo` on `#contactAvatar` |
+| About: impact numbers (500/200/25/40/30) | `about-zagazig.html#impact` | **Placeholders** — replace the `data-count` values with real figures |
+| About: Zagazig founding year | `about-zagazig.html#journey` | Marked `[add founding year]` — fill in the LC's real launch year |
 | Instagram now `/icxzagazig` | footer + menu (both pages) | From the LC (incoming-exchange handle) — confirm it's the primary account |
 | Other socials (Facebook `/AIESECZ`, X `/AIESECZagazig`, YouTube) | footer + menu | From the LC's old official site — confirm still active |
 | GV project data (names, fees, requirements, opportunity links) | `global-volunteer.html#projects` | **Real, from the LC sheet** — links are live but expire; refresh when a term closes |

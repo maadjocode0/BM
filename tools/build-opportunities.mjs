@@ -93,6 +93,7 @@ const footer = (prefix) => `<footer class="footer">
         <h4>Explore</h4>
         <a href="${prefix}index.html#about">About us</a>
         <a href="${prefix}global-volunteer.html">Global Volunteer</a>
+        <a href="${prefix}about-zagazig.html">About Zagazig</a>
         <a href="${prefix}opportunities.html">All opportunities</a>
         <a href="${prefix}index.html#programs">All programs</a>
       </nav>
